@@ -1,0 +1,498 @@
+@charset "utf-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*not visible*/
+
+.hide {
+    display: none;
+}
+
+
+/*visible*/
+
+body {
+    background-image: url(img/design2_image1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Verdana", "Geneva", sans-serif;
+    font-size: 15px;
+    width: 100%;
+}
+
+.gradient {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to right, rgba(166, 255, 42, 0.75), rgba(166, 255, 42, 0), rgba(3, 57, 73, 0), rgba(3, 57, 73, 0.25), rgba(3, 57, 73, 0.5), rgba(3, 57, 73, 0.75));
+    padding-bottom: 100px;
+}
+
+
+/*---HEADER---*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    width: 100%;
+}
+
+h1 {
+    font-family: "Impact", fantasy;
+    font-weight: lighter;
+    font-size: 60px;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #033949;
+    word-spacing: 7px;
+    padding-top: 100px;
+}
+
+.logo {
+    display: block;
+    margin: 30px;
+    margin-left: 50px;
+    margin-bottom: 70px;
+}
+
+.logo_img {
+    width: 200px;
+    height: 200px;
+}
+
+
+/*---LINKS & NAV BAR---*/
+
+a:link {
+    text-decoration: none;
+    color: #033949;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #033949;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #a6ff2a;
+}
+
+a:active {
+    text-decoration: none;
+    color: #a6ff2a;
+}
+
+aside {
+    width: 15%;
+    margin-left: 50px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu:link {
+    display: block;
+    width: 90px;
+    color: #033949;
+    font-family: "Impact", fantasy;
+    font-weight: lighter;
+    text-transform: uppercase;
+    text-align: center;
+    word-spacing: 3px;
+    padding: 15px;
+    margin: 5px;
+    transition: padding-left 1s, background-color 1s;
+}
+
+.menu:visited {
+    color: #033949;
+}
+
+.menu:hover {
+    color: #033949;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding-left: 85px;
+}
+
+.menu:active {
+    color: #033949;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.selected {
+    display: block;
+    width: 90px;
+    color: #033949;
+    font-family: "Impact", fantasy;
+    font-weight: lighter;
+    text-transform: uppercase;
+    text-align: center;
+    word-spacing: 3px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    margin: 5px;
+}
+
+.selected:hover {
+    color: #033949;
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 90px;
+}
+
+
+/*---MAIN CONTENT---*/
+
+main {
+    display: block;
+    padding: 50px;
+    padding-top: 70px;
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 67.9%;
+    margin-right: 50px;
+    margin-left: 30px;
+}
+
+h2 {
+    color: white;
+    font-family: "Impact", fantasy;
+    font-weight: lighter;
+    font-size: 25px;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    color: #033949;
+    font-family: "Impact", fantasy;
+    font-variant: small-caps;
+    font-size: 25px;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+h4 {
+    color: #033949;
+    font-style: italic;
+    letter-spacing: -1px;
+    padding-bottom: 5px;
+}
+
+h5 {
+    color: #033949;
+    font-family: "Impact", fantasy;
+    font-size: 18px;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+p {
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.section {
+    display: block;
+    padding: 10px;
+    position: absolute;
+    background-image: linear-gradient(rgba(3, 57, 73, 1), rgba(3, 57, 73, 0.25));
+    box-shadow: 0 0 10px #033949;
+    top: 275px;
+}
+
+
+/*lists*/
+
+li {
+    margin-left: 30px;
+    padding: 5px;
+    text-align: justify;
+}
+
+ul {
+    list-style-type: square;
+}
+
+.alpha {
+    list-style-type: lower-alpha;
+}
+
+.circle {
+    list-style-type: circle;
+}
+
+
+/*tables*/
+
+table {
+    width: 100%;
+    margin-bottom: 50px;
+    align-self: center;
+}
+
+tr {
+    height: 30px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+tr:hover {
+    background-color: rgba(166, 255, 42, 0.5);
+}
+
+th {
+    background-color: rgba(3, 57, 73, 0.5);
+    color: white;
+    padding-left: 10px;
+}
+
+td {
+    border-bottom-style: solid;
+    border-bottom-color: rgba(3, 57, 73, 0.5);
+    border-bottom-width: thin;
+    padding-left: 10px;
+}
+
+
+/*maps*/
+
+iframe {
+    border-style: solid;
+    border-color: rgba(3, 57, 73, 0.5);
+    border-width: thin;
+    width: 200px;
+    height: 200px;
+    transition: width 1s, height 1s;
+}
+
+iframe:hover {
+    width: 400px;
+    height: 250px;
+    box-shadow: 0px 0px 10px black;
+}
+
+.map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: black;
+    width: 30%;
+    height: 45%;
+    vertical-align: middle;
+    padding: 5px;
+    box-shadow: 0px 0px 5px black;
+}
+
+.game_locations {
+    display: flex;
+    flex-direction: column;
+}
+
+.game_location_maps {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+    margin-bottom: 50px;
+    height: 650px;
+}
+
+.game_locations_title {
+    color: white;
+    background-color: rgba(3, 57, 73, 0.5);
+    height: 20px;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+}
+
+.school_name {
+    margin-left: 0px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.school_adress {
+    margin-left: 0px;
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+
+
+/*form*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+fieldset {
+    margin: 10px;
+    padding: 10px;
+}
+
+label {
+    padding: 5px;
+}
+
+button {
+    color: white;
+    font-size: 20px;
+    font-variant: small-caps;
+    background-color: rgba(3, 57, 73, 0.75);
+    height: 50px;
+    width: 400px;
+    align-self: center;
+    margin-top: 20px;
+}
+
+button:hover {
+    color: black;
+    background-color: rgba(166, 255, 42, 0.75);
+}
+
+.personal_info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.schools {
+    display: flex;
+    flex-direction: row;
+}
+
+.play_position {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: 60px;
+    width: 50%;
+}
+
+.uniform {
+    display: flex;
+    flex-direction: column;
+}
+
+.uniform_already {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.uniform_size_a {
+    display: flex;
+    flex-direction: row;
+}
+
+.uniform_size_b {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 130px;
+    width: 48%;
+}
+
+.permission {
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.signature {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.padding_5 {
+    padding: 5px;
+}
+
+.width_half {
+    width: 48%;
+}
+
+.width_total {
+    width: 100%;
+}
+
+.width_justified {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.input_width_parentguardian {
+    width: 85%;
+}
+
+.input_width_birthdate {
+    width: 80%;
+}
+
+.form_box,
+.drop_down {
+    background-color: rgba(3, 57, 73, 0.25);
+    border: none;
+}
+
+
+/*text classes*/
+
+.text_bold {
+    font-weight: bold;
+}
+
+.text_normal {
+    font-weight: normal;
+}
+
+.text_italic {
+    font-style: italic;
+}
+
+.text_justify {
+    text-align: justify;
+}
+
+.text_underline {
+    text-decoration: underline;
+}
+
+.p_no_margins {
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+
+/*display classes*/
+
+.inline {
+    display: inline;
+}
